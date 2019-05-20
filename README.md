@@ -19,3 +19,6 @@ Caveats
 The camera is reset to the origin every frame, therefore static colliders should not be
 used. Also, all transforms that are rendered need to have a FloatingTransform or 
 FloatingRigidbody component.
+
+Translations should be performed using the FloatingComponent methods rather than the
+Transform methods.

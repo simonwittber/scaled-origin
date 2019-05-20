@@ -13,6 +13,8 @@ Translation/movement on objects in the far layer are also scaled.
 When the Transform comes back into bounds, it's scale is restored and it is added to
 the near camera layer.
 
+If your farClipPlane is set to 3000, then you can seamlessly work with a 7290 km2 world.
+
 
 Caveats
 -------

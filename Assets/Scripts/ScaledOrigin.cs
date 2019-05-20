@@ -13,7 +13,7 @@ public class ScaledOrigin : MonoBehaviour
         if (mainCamera)
         {
             localSpaceObjects = (FloatingComponent[])GameObject.FindObjectsOfType(typeof(FloatingComponent));
-            FloatingComponent.MAXRANGE = mainCamera.farClipPlane;
+            FloatingComponent.MAXRANGE = mainCamera.farClipPlane * 0.9f;
         }
     }
 

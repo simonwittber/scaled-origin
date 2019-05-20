@@ -3,7 +3,6 @@ An derivative of floating origin + 3D skybox for implementing massive worlds in 
 
 How does it work?
 -----------------
-
 Two Cameras are used, one for near objects, one for far objects.
 The far camera renders first, then the near camera renders, only clearing the zbuffer.
 
@@ -13,3 +12,10 @@ Translations to objects in the far layer are also scaled.
 
 When the Transform comes back into bounds, it's scale is restored and it is added to
 the near camera layer.
+
+
+Caveats
+-------
+The camera is reset to the origin every frame, therefore static colliders should not be
+used. Also, all transforms that are rendered need to have a FloatingTransform or 
+FloatingRigidbody component.
